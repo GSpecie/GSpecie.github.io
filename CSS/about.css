@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+body{
+    background-color: #262626;
+}
+
+div#interface {
+    position: absolute;
+    left: 150px;
+    width: 1550px;
+    height: 1270px;
+    /*background-color: #3c3c3c;*/
+    margin: -10px auto auto auto;
+    padding: 10px;
+}
+
+header#mHeader{
+    /*background-color: #3c3c3c;*/
+    height: 100px;
+    width: 1550px;
+    margin: -10px auto -10px auto;
+}
+
+header#mHeader a#logo{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: 3;
+}
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ul{
+    
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -70px;
+    left: 5px;
+}
+
+nav#menu li{
+    font-size: large;
+    display: inline-block;
+    padding: 65px;
+}
+
+nav#menu a{
+    z-index: 2;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    
+    cursor: pointer;
+	display: block;
+    position: absolute;
+	/*border: 2px solid  white;*/
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    width: 120px;
+    height: 80px;
+    margin: 1px;
+    line-height: 80px;
+}
+
+nav#menu a:hover{
+    color: white ;
+	background-color: transparent;
+	text-shadow: none;
+}
+
+nav#menu a:hover:before{
+    bottom: 0%;
+	top: auto;
+	height: 100%;
+}
+
+nav#menu a:before{
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 0px;
+	width: 100%;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background:  #bc0202;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+nav#menu ul li div {
+    display: none;
+    z-index: 1;
+    width: 1550px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    top: 146px;
+    left: 5px;
+    background-color: white;
+}
+
+nav#menu ul li div ul {
+    position: absolute;
+    top: -80px;;
+    left: -10px;
+}
+
+nav#menu ul li div ul li a {
+    font-size: medium;
+    color:black;
+}
+
+nav#menu ul li div ul li a:hover {
+    font-size: large;
+    color:black;
+}
+
+nav#menu ul li div ul a:before {
+    background: transparent;
+    color:black;
+}
+/*faz a mágica*/
+nav#menu ul li:hover div{
+    display: block;
+}
+
+nav#socialMediaIcons {
+    display: block;
+}
+
+h2#phoneNumber{
+    position: absolute;
+    top: 30px;
+    left: 830px;
+}
+
+h2#phoneNumber a{
+    text-decoration: none;
+    color: white;
+}
+
+h2#myEmail{
+    position: absolute;
+    top: 0px;
+    left: 800px;
+}
+
+h2#myEmail a{
+    text-decoration: none;
+    color: white;
+}
+
+
+nav#socialMediaIcons ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -10px;
+    left: 1043px;
+}
+
+nav#socialMediaIcons li{
+    display: inline-block;
+    /*background-color: #3c3c3c;*/
+    padding: 5px;
+    margin: 1px;
+}
+
+section#mSection h3#aboutMeTitle{
+    position: absolute;
+    top: 20px;
+    left: 820px;
+    font-size: 100px;
+    color: #bc0202;
+    z-index: 2;
+}
+
+section#mSection p#aboutText {
+    text-align: justify;
+    position: absolute;
+    top: 250px;
+    left: 820px;
+    z-index: 1;
+    color: white;
+    font-size: 25px;
+    max-width: 700px;
+}
+
+div.zoomIn {
+    /*background-color: #3c3c3c;*/
+    position: absolute;
+    width: 1550px;
+    height: 647px;
+    top: 100px;
+    overflow: hidden;
+}
+
+section#mSection img#aboutMe {
+    /* background: url(../Art/Provisorio/grandeBlocoAzulProvisorio.jpg) no-repeat;*/
+    transition: transform .5s ease;
+}
+
+section#mSection img#aboutMe:hover {
+    transform: scale(1.1);
+}
+
+div.gameImage{
+    overflow: hidden;
+    /*background-color: #3c3c3c;*/
+    width: 372px;
+    height: 427px;
+    float: left;
+    margin: 10px;
+}
+
+ul#games {
+    list-style: none;
+    position: absolute;
+    top: 750px;
+    left: -40px;
+    overflow: hidden;
+
+}
+
+ul#games li{
+    transition: transform .5s ease;
+}
+
+ul#games li:hover{
+
+    transform: scale(1.05);
+}
+
+footer#mFooter{
+    background-color: #3b3b3b;
+    height: 80px;
+    width: 1900px;
+    margin: -10px auto -10px auto;
+    z-index: 1;
+    position: absolute;
+    top: 1240px;
+    left: -150px;
+}
+
+footer#mFooter h3#copyright{
+    text-transform: uppercase;
+    position: relative;
+    top: 0px;
+    left: 700px;
+    font-size: small;
+    color: white;
+    display: inline-block;
+    padding: 30px;
+    margin: 1px;
+}
+
