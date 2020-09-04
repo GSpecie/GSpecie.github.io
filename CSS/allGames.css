@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-    background-color: #262626;
+    background-color: #272c33;
 }
 
 div#interface {
@@ -23,8 +23,8 @@ header#mHeader{
 
 header#mHeader a#logo{
     position: absolute;
-    top: 5px;
-    left: 10px;
+    top: 10px;
+    left: 15px;
     z-index: 3;
 }
 
@@ -85,7 +85,7 @@ nav#menu a:before{
 	z-index: -1;
 	content: '';
 	color: #000 !important;
-	background:  #bc0202;
+	background:  #40d9e1;
 	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
@@ -130,35 +130,12 @@ nav#socialMediaIcons {
     display: block;
 }
 
-h2#phoneNumber{
-    position: absolute;
-    top: 30px;
-    left: 830px;
-}
-
-h2#phoneNumber a{
-    text-decoration: none;
-    color: white;
-}
-
-h2#myEmail{
-    position: absolute;
-    top: 0px;
-    left: 800px;
-}
-
-h2#myEmail a{
-    text-decoration: none;
-    color: white;
-}
-
-
 nav#socialMediaIcons ul{
     list-style: none;
     text-transform: uppercase;
     position: absolute;
-    top: -10px;
-    left: 1043px;
+    top: 15px;
+    left: 1240px;
 }
 
 nav#socialMediaIcons li{
@@ -166,6 +143,38 @@ nav#socialMediaIcons li{
     /*background-color: #3c3c3c;*/
     padding: 5px;
     margin: 1px;
+    
+}
+
+nav#socialMediaIcons img#Email:hover {
+    border: 1px solid #40d9e1;
+    border-radius: 100%;
+    transition: all .5s ease-out;
+}
+nav#socialMediaIcons img#whatsapp:hover {
+    border: 1px solid #40d9e1;
+    border-radius: 100%;
+    transition: all .5s ease-out;
+}
+nav#socialMediaIcons img#Gamejolt:hover {
+    border: 1px solid #40d9e1;
+    border-radius: 100%;
+    transition: all .5s ease-out;
+}
+nav#socialMediaIcons img#Itchio:hover {
+    border: 1px solid #40d9e1;
+    border-radius: 100%;
+    transition: all .5s ease-out;
+}
+nav#socialMediaIcons img#Twitter:hover {
+    border: 1px solid #40d9e1;
+    border-radius: 100%;
+    transition: all .5s ease-out;
+}
+nav#socialMediaIcons img#Linkedin:hover {
+    border: 1px solid #40d9e1;
+    border-radius: 100%;
+    transition: all .5s ease-out;
 }
 
 div.gameImage{
@@ -196,7 +205,7 @@ ul#games li:hover{
 }
 
 footer#mFooter{
-    background-color: #3b3b3b;
+    background-color: #3f4652;
     height: 80px;
     width: 1900px;
     margin: -10px auto -10px auto;

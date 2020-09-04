@@ -1,8 +1,4 @@
 @charset "UTF-8";
-@font-face{
-    font-family: 'cinzel';
-    src: url('../Art/Fonts/Forum-Regular.ttf')
-}
 
 body{
     background-color: #272c33;
@@ -188,9 +184,10 @@ section#mSection h3#aboutMeTitle{
     position: absolute;
     top: 20px;
     left: 820px;
-    
     font-size: 100px;
-    font-family: 'cinzel';
+    font-family: 'Forum';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #40d9e1;
     z-index: 2;
 }
