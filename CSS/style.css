@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-    background-color: #262626;
+    background-color: #272c33;
 }
 
 div#interface {
@@ -86,7 +86,7 @@ nav#menu a:before{
 	z-index: -1;
 	content: '';
 	color: #000 !important;
-	background:  #bc0202;
+	background:  #40d9e1;
 	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
@@ -174,7 +174,7 @@ section#mSection h3#aboutMeTitle{
     top: 20px;
     left: 820px;
     font-size: 100px;
-    color: #bc0202;
+    color: #40d9e1;
     z-index: 2;
 }
 
@@ -235,7 +235,7 @@ ul#games li:hover{
 }
 
 footer#mFooter{
-    background-color: #3b3b3b;
+    background-color: #3f4652;
     height: 80px;
     width: 1900px;
     margin: -10px auto -10px auto;
