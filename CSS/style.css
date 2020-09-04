@@ -149,16 +149,38 @@ nav#socialMediaIcons li{
     /*background-color: #3c3c3c;*/
     padding: 5px;
     margin: 1px;
-}
-
-nav#socialMediaIcons a#emailIcon{
     
 }
 
-nav#socialMediaIcons a#emailIcon:hover {
-
-    
-    /*transition: all .5s ease;*/
+nav#socialMediaIcons img#Email:hover {
+    border: 1px solid #40d9e1;
+    border-radius: 100%;
+    transition: all .5s ease-out;
+}
+nav#socialMediaIcons img#whatsapp:hover {
+    border: 1px solid #40d9e1;
+    border-radius: 100%;
+    transition: all .5s ease-out;
+}
+nav#socialMediaIcons img#Gamejolt:hover {
+    border: 1px solid #40d9e1;
+    border-radius: 100%;
+    transition: all .5s ease-out;
+}
+nav#socialMediaIcons img#Itchio:hover {
+    border: 1px solid #40d9e1;
+    border-radius: 100%;
+    transition: all .5s ease-out;
+}
+nav#socialMediaIcons img#Twitter:hover {
+    border: 1px solid #40d9e1;
+    border-radius: 100%;
+    transition: all .5s ease-out;
+}
+nav#socialMediaIcons img#Linkedin:hover {
+    border: 1px solid #40d9e1;
+    border-radius: 100%;
+    transition: all .5s ease-out;
 }
 
 section#mSection h3#aboutMeTitle{
