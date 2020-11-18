@@ -131,7 +131,6 @@ nav#socialMediaIcons {
     display: block;
 }
 
-
 nav#socialMediaIcons ul{
     list-style: none;
     text-transform: uppercase;
@@ -145,7 +144,6 @@ nav#socialMediaIcons li{
     /*background-color: #3c3c3c;*/
     padding: 5px;
     margin: 1px;
-    
 }
 
 nav#socialMediaIcons img#Email:hover {
