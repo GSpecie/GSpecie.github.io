@@ -227,7 +227,7 @@ ul#toolsList{
 }
 
 a.animated-button.thar-one {
-    color: #02d5ff;
+    color: #284c4a;
     background-color: #e48476;
     font-size: 40px;
     text-align: center;
@@ -240,7 +240,7 @@ a.animated-button.thar-one {
     position: absolute;
     top: 324px;
     left: 425px;
-    border: 2px solid #78ffff;
+    border: 2px solid #284c4a;
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
     a.animated-button.thar-one:hover {
