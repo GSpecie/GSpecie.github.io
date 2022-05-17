@@ -178,15 +178,6 @@ nav#socialMediaIcons img#Linkedin:hover {
     transition: all .5s ease-out;
 }
 
-/*
-nav#socialMediaIcons a{
-    transition: transform .5s ease;
-}
-
-nav#socialMediaIcons a#hover{
-    transform: scale(1.5);
-}*/
-
 section#mSection p#aboutText {
     text-align: justify;
     position: absolute;
@@ -227,8 +218,7 @@ ul#toolsList{
 }
 
 a.animated-button.thar-one {
-    color: #02d5ff;
-    background-color: #ffbaff;
+    color: #2a2e30;
     font-size: 40px;
     text-align: center;
     width: 450px;
@@ -240,34 +230,33 @@ a.animated-button.thar-one {
     position: absolute;
     top: 324px;
     left: 425px;
-    border: 2px solid #40d9e1;
+    border: 2px solid #805b27;
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
     a.animated-button.thar-one:hover {
-        color: #ffbaff !important;
-        background-color: #40d9e1;
+        color: #ca3f3e !important;
+        background-color: transparent;
         text-shadow: none;
-        border: 2px solid #ffbaff;
+        border: 2px solid #ca3f3e;
     }
-
 a.animated-button.thar-one:hover:before {
 	bottom: 0%;
 	top: auto;
 	height: 100%;
 }
-    a.animated-button.thar-one:before {
-        display: block;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        height: 0px;
-        width: 100%;
-        z-index: -1;
-        content: '';
-        color: #000 !important;
-        background: #40d9e1;
-        transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-    }
+a.animated-button.thar-one:before {
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 0px;
+	width: 100%;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background:  transparent;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
 
 div.gameImage{
     overflow: hidden;
