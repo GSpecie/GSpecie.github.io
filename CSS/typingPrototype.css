@@ -240,7 +240,7 @@ a.animated-button.thar-one {
     position: absolute;
     top: 324px;
     left: 425px;
-    border: 2px solid #ffbaff;
+    border: 2px solid #40d9e1;
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
     a.animated-button.thar-one:hover {
