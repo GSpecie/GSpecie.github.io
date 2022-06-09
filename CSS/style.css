@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-body{
+body {
     background-color: #272c33;
 }
 
@@ -14,176 +14,182 @@ div#interface {
     padding: 10px;
 }
 
-header#mHeader{
+header#mHeader {
     /*background-color: #3c3c3c;*/
     height: 100px;
     width: 1550px;
     margin: -10px auto -10px auto;
 }
 
-header#mHeader a#logo{
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    z-index: 3;
-}
+    header#mHeader a#logo {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        z-index: 3;
+    }
 
 nav#menu {
     display: block;
 }
 
-nav#menu ul{
-    
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute;
-    top: -70px;
-    left: 5px;
-}
+    nav#menu ul {
+        list-style: none;
+        text-transform: uppercase;
+        position: absolute;
+        top: -70px;
+        left: 5px;
+    }
 
-nav#menu li{
-    font-size: large;
-    display: inline-block;
-    padding: 65px;
-}
+    nav#menu li {
+        font-size: large;
+        display: inline-block;
+        padding: 65px;
+    }
 
-nav#menu a{
-    z-index: 2;
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    
-    cursor: pointer;
-	display: block;
-    position: absolute;
-	/*border: 2px solid  white;*/
-    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-    width: 120px;
-    height: 80px;
-    margin: 1px;
-    line-height: 80px;
-}
+    nav#menu a {
+        z-index: 2;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        /*border: 2px solid  white;*/
+        transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+        width: 120px;
+        height: 80px;
+        margin: 1px;
+        line-height: 80px;
+    }
 
-nav#menu a:hover{
-    color: white ;
-	background-color: transparent;
-	text-shadow: none;
-}
+        nav#menu a:hover {
+            color: white;
+            background-color: transparent;
+            text-shadow: none;
+        }
 
-nav#menu a:hover:before{
-    bottom: 0%;
-	top: auto;
-	height: 100%;
-}
+            nav#menu a:hover:before {
+                bottom: 0%;
+                top: auto;
+                height: 100%;
+            }
 
-nav#menu a:before{
-	display: block;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	height: 0px;
-	width: 100%;
-	z-index: -1;
-	content: '';
-	color: #000 !important;
-	background:  #40d9e1;
-	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-}
+        nav#menu a:before {
+            display: block;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 0px;
+            width: 100%;
+            z-index: -1;
+            content: '';
+            color: #000 !important;
+            background: #40d9e1;
+            transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+        }
 
-nav#menu ul li div {
-    display: none;
-    z-index: 1;
-    width: 1550px;
-    height: 50px;
-    line-height: 50px;
-    position: absolute;
-    top: 146px;
-    left: 5px;
-    background-color: white;
-}
+    nav#menu ul li div {
+        display: none;
+        z-index: 1;
+        width: 1550px;
+        height: 50px;
+        line-height: 50px;
+        position: absolute;
+        top: 146px;
+        left: 5px;
+        background-color: white;
+    }
 
-nav#menu ul li div ul {
-    position: absolute;
-    top: -80px;;
-    left: -10px;
-}
+        nav#menu ul li div ul {
+            position: absolute;
+            top: -80px;
+            ;
+            left: -10px;
+        }
 
-nav#menu ul li div ul li a {
-    font-size: medium;
-    color:black;
-}
+            nav#menu ul li div ul li a {
+                font-size: medium;
+                font-family: Gotham;
+                color: black;
+            }
 
-nav#menu ul li div ul li a:hover {
-    font-size: large;
-    color:black;
-}
+                nav#menu ul li div ul li a:hover {
+                    font-size: large;
+                    font-family: Gotham;
+                    color: black;
+                }
 
-nav#menu ul li div ul a:before {
-    background: transparent;
-    color:black;
-}
-/*faz a mágica*/
-nav#menu ul li:hover div{
-    display: block;
-}
+            nav#menu ul li div ul a:before {
+                background: transparent;
+                color: black;
+            }
+    /*faz a mágica*/
+    nav#menu ul li:hover div {
+        display: block;
+    }
 
 nav#socialMediaIcons {
     display: block;
 }
 
-nav#socialMediaIcons ul{
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute;
-    top: 15px;
-    left: 1240px;
-}
+    nav#socialMediaIcons ul {
+        list-style: none;
+        text-transform: uppercase;
+        position: absolute;
+        top: 15px;
+        left: 1240px;
+    }
 
-nav#socialMediaIcons li{
-    display: inline-block;
-    /*background-color: #3c3c3c;*/
-    padding: 5px;
-    margin: 1px;
-}
+    nav#socialMediaIcons li {
+        display: inline-block;
+        /*background-color: #3c3c3c;*/
+        padding: 5px;
+        margin: 1px;
+    }
 
-nav#socialMediaIcons img#Email:hover {
-    border: 1px solid #40d9e1;
-    border-radius: 100%;
-    transition: all .5s ease-out;
-}
-nav#socialMediaIcons img#whatsapp:hover {
-    border: 1px solid #40d9e1;
-    border-radius: 100%;
-    transition: all .5s ease-out;
-}
-nav#socialMediaIcons img#Gamejolt:hover {
-    border: 1px solid #40d9e1;
-    border-radius: 100%;
-    transition: all .5s ease-out;
-}
-nav#socialMediaIcons img#Itchio:hover {
-    border: 1px solid #40d9e1;
-    border-radius: 100%;
-    transition: all .5s ease-out;
-}
-nav#socialMediaIcons img#Twitter:hover {
-    border: 1px solid #40d9e1;
-    border-radius: 100%;
-    transition: all .5s ease-out;
-}
-nav#socialMediaIcons img#Linkedin:hover {
-    border: 1px solid #40d9e1;
-    border-radius: 100%;
-    transition: all .5s ease-out;
-}
+    nav#socialMediaIcons img#Email:hover {
+        border: 1px solid #40d9e1;
+        border-radius: 100%;
+        transition: all .5s ease-out;
+    }
 
-section#mSection h3#aboutMeTitle{
+    nav#socialMediaIcons img#whatsapp:hover {
+        border: 1px solid #40d9e1;
+        border-radius: 100%;
+        transition: all .5s ease-out;
+    }
+
+    nav#socialMediaIcons img#Gamejolt:hover {
+        border: 1px solid #40d9e1;
+        border-radius: 100%;
+        transition: all .5s ease-out;
+    }
+
+    nav#socialMediaIcons img#Itchio:hover {
+        border: 1px solid #40d9e1;
+        border-radius: 100%;
+        transition: all .5s ease-out;
+    }
+
+    nav#socialMediaIcons img#Twitter:hover {
+        border: 1px solid #40d9e1;
+        border-radius: 100%;
+        transition: all .5s ease-out;
+    }
+
+    nav#socialMediaIcons img#Linkedin:hover {
+        border: 1px solid #40d9e1;
+        border-radius: 100%;
+        transition: all .5s ease-out;
+    }
+
+section#mSection h3#aboutMeTitle {
     font-style: none;
     position: absolute;
     top: 20px;
     left: 820px;
     font-size: 100px;
-    font-family: 'Forum';
+    font-family: Gotham;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #40d9e1;
@@ -198,6 +204,7 @@ section#mSection p#aboutText {
     z-index: 1;
     color: white;
     font-size: 25px;
+    font-family: Gotham;
     max-width: 700px;
 }
 
@@ -215,11 +222,11 @@ section#mSection img#aboutMe {
     transition: transform .5s ease;
 }
 
-section#mSection img#aboutMe:hover {
-    transform: scale(1.1);
-}
+    section#mSection img#aboutMe:hover {
+        transform: scale(1.1);
+    }
 
-div.gameImage{
+div.gameImage {
     overflow: hidden;
     /*background-color: #3c3c3c;*/
     width: 372px;
@@ -234,19 +241,17 @@ ul#games {
     top: 750px;
     left: -40px;
     overflow: hidden;
-
 }
 
-ul#games li{
-    transition: transform .5s ease;
-}
+    ul#games li {
+        transition: transform .5s ease;
+    }
 
-ul#games li:hover{
+        ul#games li:hover {
+            transform: scale(1.05);
+        }
 
-    transform: scale(1.05);
-}
-
-footer#mFooter{
+footer#mFooter {
     background-color: #3f4652;
     height: 80px;
     width: 1900px;
@@ -257,15 +262,15 @@ footer#mFooter{
     left: -150px;
 }
 
-footer#mFooter h3#copyright{
-    text-transform: uppercase;
-    position: relative;
-    top: 0px;
-    left: 700px;
-    font-size: small;
-    color: white;
-    display: inline-block;
-    padding: 30px;
-    margin: 1px;
-}
-
+    footer#mFooter h3#copyright {
+        text-transform: uppercase;
+        position: relative;
+        top: 0px;
+        left: 700px;
+        font-size: small;
+        font-family: Gotham;
+        color: white;
+        display: inline-block;
+        padding: 30px;
+        margin: 1px;
+    }

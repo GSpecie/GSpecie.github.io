@@ -41,11 +41,12 @@ nav#menu ul{
     left: 5px;
 }
 
-nav#menu li{
-    font-size: large;
-    display: inline-block;
-    padding: 65px;
-}
+    nav#menu li {
+        font-size: large;
+        font-family: Gotham;
+        display: inline-block;
+        padding: 65px;
+    }
 
 nav#menu a{
     z-index: 2;
@@ -108,15 +109,17 @@ nav#menu ul li div ul {
     left: -10px;
 }
 
-nav#menu ul li div ul li a {
-    font-size: medium;
-    color:black;
-}
+    nav#menu ul li div ul li a {
+        font-size: medium;
+        font-family: Gotham;
+        color: black;
+    }
 
-nav#menu ul li div ul li a:hover {
-    font-size: large;
-    color:black;
-}
+    nav#menu ul li div ul li a:hover {
+        font-size: large;
+        font-family: Gotham;
+        color: black;
+    }
 
 nav#menu ul li div ul a:before {
     background: transparent;
@@ -185,7 +188,7 @@ section#mSection h3#aboutMeTitle{
     top: 20px;
     left: 820px;
     font-size: 100px;
-    font-family: 'Forum';
+    font-family: Gotham;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #40d9e1;
@@ -200,6 +203,7 @@ section#mSection p#aboutText {
     z-index: 1;
     color: white;
     font-size: 25px;
+    font-family: Gotham;
     max-width: 700px;
 }
 
@@ -259,14 +263,15 @@ footer#mFooter{
     left: -150px;
 }
 
-footer#mFooter h3#copyright{
-    text-transform: uppercase;
-    position: relative;
-    top: 0px;
-    left: 700px;
-    font-size: small;
-    color: white;
-    display: inline-block;
-    padding: 30px;
-    margin: 1px;
-}
+    footer#mFooter h3#copyright {
+        text-transform: uppercase;
+        position: relative;
+        top: 0px;
+        left: 700px;
+        font-size: small;
+        font-family: Gotham;
+        color: white;
+        display: inline-block;
+        padding: 30px;
+        margin: 1px;
+    }
