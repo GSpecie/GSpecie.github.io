@@ -1,0 +1,332 @@
+:root {
+    --headerMenuHeight: 100px;
+    --headerMenuWidth: 120px;
+    --dropDownHeight: 50px;
+    --footerHeight: 80px;
+    --background1: #272c33;
+    --background2: #3f4551;
+    --contrastColor: #40d9e1;
+    --mainTextColor: #fff;
+}
+
+body {
+    background: var(--background1);
+    font-size: 16px;
+}
+
+.interface {
+    padding: 0px 165px;
+}
+
+/*
+########################################################
+HEADER
+########################################################
+*/
+
+.mHeader {
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.mHeader__logo {
+    justify-self: center;
+    margin-right: 2rem;
+}
+
+.mHeader__menu {
+    font-family: Gotham;
+    font-size: medium;
+    flex-grow: 1;
+    text-transform: uppercase;
+}
+
+.mHeader__menu--list {
+    display: flex;
+    list-style: none;
+}
+
+.mHeader__menu--item {
+    height: var(--headerMenuHeight);
+    text-align: center;
+    width: var(--headerMenuWidth);
+    line-height: var(--headerMenuHeight);
+    background-color: var(--background1);
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.mHeader__menu--item:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.mHeader__menu--item::before {
+    background-color: var(--contrastColor);
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: var(--headerMenuWidth);
+    z-index: -1;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.mHeader__menu--item:hover::before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+    position: absolute;
+}
+
+.mHeader__menu--link {
+    color: var(--mainTextColor);
+    text-decoration: none;
+}
+
+/*faz a mágica*/
+.gamesButton:hover .mDropdown {
+    display: block;
+}
+
+.mDropdown {
+    color: black;
+    background-color: #fff;
+    display: none;
+    height: var(--dropDownHeight);
+    left: 165px;
+    line-height: var(--dropDownHeight);
+    position: fixed;
+    width: calc(100% - 2 * 165px);
+    z-index: 2;
+}
+
+.mDropdown__list {
+    display: flex;
+}
+
+.mDropdown__item {
+    padding: 0 1rem;
+    width: var(--headerMenuWidth - 0.5rem);
+}
+
+.mDropdown__item:hover {
+    background-color: #ddd;
+}
+
+.mDropdown__item:first-child {
+    margin-left: calc(100px - 16px);
+}
+
+.mDropdown__item:last-child {
+    margin-right: 0;
+}
+
+.mDropdown__link {
+    color: black;
+    text-decoration: none;
+}
+
+.mHeader__socialMedia {
+    justify-self: flex-end;
+}
+
+.mHeader__socialMedia--list {
+    display: flex;
+    list-style-type: none;
+}
+
+.mHeader__socialMedia--item {
+    border: 1px solid transparent;
+    margin-right: 10px;
+    transition: all .25s ease-out;
+}
+
+.mHeader__socialMedia--item:hover {
+    border: 1px solid var(--contrastColor);
+    border-radius: 100%;
+}
+
+.mHeader__socialMedia--item:last-child {
+    margin-right: none;
+}
+
+/*
+########################################################
+MAIN
+########################################################
+*/
+
+.aboutMe {
+    align-items: center;
+    display: flex;
+    background: var(--background2);
+    padding: 3rem 5rem;
+    margin-bottom: 3rem;
+}
+
+.zoomIn a {
+    overflow: hidden;
+}
+
+.zoomIn:hover .aboutMe__img {
+    transform: scale(1.1);
+}
+
+.aboutMe__img {
+    background-image: url(../Art/Identity/AboutPhoto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 586px;
+    width: 390px;
+    margin-right: 5rem;
+    transition: transform .5s ease;
+}
+
+.aboutMe__title {
+    color: var(--contrastColor);
+    font-size: 100px;
+    font-style: none;
+    margin-bottom: 3rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.aboutMe__text {
+    color: var(--mainTextColor);
+    font-size: 25px;
+    font-family: Gotham;
+    margin-bottom: 2rem;
+}
+
+.aboutMe__text:last-child {
+    margin-bottom: 0;
+}
+
+.gameImage {
+    overflow: hidden;
+}
+
+.gameImage:hover .games__item {
+    transform: scale(1.05);
+    transition: transform .5s ease;
+}
+
+.games__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.games__item {
+    margin-bottom: 3rem;
+    transition: transform .5s ease;
+}
+
+/*
+########################################################
+FOOTER
+########################################################
+*/
+
+.mFooter {
+    background: var(--background2);
+    color: var(--mainTextColor);
+    font-family: Gotham;
+    font-size: small;
+    height: var(--footerHeight);
+    line-height: var(--footerHeight);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/*
+########################################################
+RESPONSIVIDADE
+########################################################
+*/
+
+@media screen and (max-width: 1446px) {
+    .games__list {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1229px) {
+    .interface {
+        padding: 0;
+    }
+
+    .mHeader__logo {
+        margin-left: 2rem;
+    }
+
+    .mDropdown {
+        left: 0;
+        width: 100vw;
+    }
+
+    .aboutMe__title {
+        font-size: 60px;
+    }
+
+    .aboutMe__text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mHeader {
+        flex-direction: column;
+    }
+
+    .mHeader__logo {
+        margin: 2rem;
+    }
+
+    .mHeader__menu {
+        order: 1;
+        width: 100%;
+    }
+
+    .mHeader__menu--list {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .mHeader__socialMedia {
+        margin-bottom: 1rem;
+    }
+
+    .mHeader__socialMedia--item {
+        margin-right: 2rem;
+    }
+
+    .aboutMe {
+        flex-direction: column;
+    }
+
+    .aboutMe__img {
+        background: url(../Art/Identity/AboutPhoto_Landscape.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 0;
+        width: 500px;
+        height: 500px;
+        display: block;
+    }
+
+    .aboutMe__title {
+        font-size: 100px;
+    }
+
+    .aboutMe__text {
+        font-size: 25px;
+    }
+}
