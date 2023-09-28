@@ -1,63 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
-    <link rel="icon" href="Art/Identity/logo_white.png">
-    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Specie</title>
-</head>
-<body>
-    <div id="interface">
-        
-        <header id="mHeader">
-            <a href="index.html" id="logo"><img src="./Art/Identity/logo_white.png" alt="Logo"></a>
-            <nav id="menu">
-                <ul>
-                    <li><a href ="about.html">About</a></li>
-                    <li><a class="gamesButton" href ="allGames.html">Games</a>
-                        <div class="mDropdown">
-                            <ul>
-                                <li><a href="personalGames.html">Personal</a></li>
-                                <li><a href="collegeGames.html">College</a></li>
-                                <li><a href="gamejamGames.html">Gamejams</a></li>
-                                <li><a href="prototypeGames.html">Prototypes</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href ="/Documents/Gabriel Specie - Curriculum Vitae.pdf" target="_blank">CV</a></li>
-                </ul>
-            </nav>
-            <nav id="socialMediaIcons">
-                <ul>
-                    <li><a href="mailto:gabriel.specie@gmail.com" target="_blank"><img id ="Email" src="./Art/Icons/emailIcon.png" alt="email"></a></li>
-                    <li><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511964634548" target="_blank"><img id ="whatsapp" src="./Art/Icons/whatsapp.png" alt="whatsapp"></a></li>
-                    <li><a href="https://gamejolt.com/@GabrielSpecie" target="_blank"><img id="Gamejolt" src="./Art/Icons/gamejoltIcon.png" alt="Gamejolt"></a></li>
-                    <li><a href="https://specie.itch.io/" target="_blank"><img id="Itchio" src="./Art/Icons/itchioIcon.png" alt="Itchio"></a></li>
-                    <li><a href="https://twitter.com/Gabriel_Specie" target="_blank"><img id="Twitter" src="./Art/Icons/twitter.png" alt="Twitter"></a></li>
-                    <li><a href="https://www.linkedin.com/in/gabriel-specie-90570b150/" target="_blank"><img id="Linkedin" src="./Art/Icons/linkedin.png" alt="Linkedin"></a></li>
-                </ul>
-            </nav>
+    <head>
+        <link rel="icon" href="Art/Identity/logo_white.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&display=swap">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gabriel Specie</title>
 
-        </header>
-        
-        <section id="mSection">
-            <h3 id="aboutMeTitle">Who am I ?</h3>
-            <p class="aboutMe__text">My main focus is working as a Gameplay Game Designer, I posses a range of generalist game development skills such as unity, c#, rigging, animation and 3D art. I aspire to develop games that promote positive attitudes and collaboration (possibly in a realistic context), in order to express myself, spread new perspectives and design magical experiences.</p>
-            </p>
-            <div class="zoomIn"><a href ="about.html"><img id="aboutMe" src="./Art/Identity/About.jpg" alt="AboutMe"></a></div>
-                <ul id = "games">
-                    <div class="gameImage"><li><a href="sonnergy.html"><img src="./Art/Games/Sonnergy_Index.jpg"></img></a></li></div>
-                    <div class="gameImage"><li><a href="guardiansOfKonterah.html"><img src="./Art/Games/GOK_Index.jpg"></img></a></li></div>
-                    <div class="gameImage"><li><a href="defendXKill.html"><img src="./Art/Games/DXK_Index.jpg"></img></a></li></div>
-                    <div class="gameImage"><li><a href="lightBringer.html"><img src="./Art/Games/LightBringer_Index.jpg"></a></img></li></div>
-                </ul>
-        </section>
+        <link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="CSS/newstyle.css">
+    </head>
+    <body>
+        <div class="interface">
+            
+            <header class="mHeader">
+                <a href="index.html" class="mHeader__logo"><img src="./Art/Identity/logo_white.png" alt="Logo"></a>
+                <nav class="mHeader__menu">
+                    <ul class="mHeader__menu--list">
+                        <li class="mHeader__menu--item"><a href ="about.html" class="mHeader__menu--link">About</a></li>
+                        <li class="mHeader__menu--item gamesButton"><a class="mHeader__menu--link" href ="allGames.html">Games</a>
+                            <div class="mDropdown">
+                                <ul class="mDropdown__list">
+                                    <li class="mDropdown__item"><a href="personalGames.html" class="mDropdown__link">Personal</a></li>
+                                    <li class="mDropdown__item"><a href="collegeGames.html" class="mDropdown__link">College</a></li>
+                                    <li class="mDropdown__item"><a href="gamejamGames.html" class="mDropdown__link">Gamejams</a></li>
+                                    <li class="mDropdown__item"><a href="prototypeGames.html" class="mDropdown__link">Prototypes</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mHeader__menu--item"><a href ="./Documents/Gabriel Specie - Curriculum Vitae.pdf" target="_blank" class="mHeader__menu--link">CV</a></li>
+                    </ul>
+                </nav>
+                <nav class="mHeader__socialMedia">
+                    <ul class="mHeader__socialMedia--list">
+                        <li class="mHeader__socialMedia--item"><a href="mailto:gabriel.specie@gmail.com" target="_blank"><img id ="Email" src="./Art/Icons/emailIcon.png" alt="email"></a></li>
+                        <li class="mHeader__socialMedia--item"><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511964634548" target="_blank"><img id ="whatsapp" src="./Art/Icons/whatsapp.png" alt="whatsapp"></a></li>
+                        <li class="mHeader__socialMedia--item"><a href="https://gamejolt.com/@GabrielSpecie" target="_blank"><img id="Gamejolt" src="./Art/Icons/gamejoltIcon.png" alt="Gamejolt"></a></li>
+                        <li class="mHeader__socialMedia--item"><a href="https://specie.itch.io/" target="_blank"><img id="Itchio" src="./Art/Icons/itchioIcon.png" alt="Itchio"></a></li>
+                        <li class="mHeader__socialMedia--item"><a href="https://twitter.com/Gabriel_Specie" target="_blank"><img id="Twitter" src="./Art/Icons/twitter.png" alt="Twitter"></a></li>
+                        <li class="mHeader__socialMedia--item"><a href="https://www.linkedin.com/in/gabriel-specie-90570b150/" target="_blank"><img id="Linkedin" src="./Art/Icons/linkedin.png" alt="Linkedin"></a></li>
+                    </ul>
+                </nav>
 
-        <footer id="mFooter">
-            <h3 id="copyright">COPYRIGHT &#9400; 2020 GABRIEL SPECIE - ALL RIGHTS<del>(AND LEFTS!)</del> RESERVED</h3>
+            </header>
+            
+            <section class="aboutMe">
+                <div class="zoomIn"><a href ="about.html"><div class="aboutMe__img" aria-label="Gabriel Specie"></div></a></div>
+                
+                <div class="aboutMe__content">
+                    <h3 class="aboutMe__title">Who am I ?</h3>
+                    <p class="aboutMe__text">My main focus is working as a Gameplay Game Designer, I posses a range of generalist game development skills such as unity, c#, rigging, animation and 3D art. I aspire to develop games that promote positive attitudes and collaboration (possibly in a realistic context), in order to express myself, spread new perspectives and design magical experiences.</p>
+    
+                </div>
+            </section>
+            
+            <section class="games">
+                <ul class="games__list">
+                    <div class="gameImage"><li class="games__item"><a href="sonnergy.html"><img src="./Art/Games/Sonnergy_Index.jpg" alt="Jogo Sonnergy"></a></li></div>
+                    <div class="gameImage"><li class="games__item"><a href="guardiansOfKonterah.html"><img src="./Art/Games/GOK_Index.jpg" alt="Jogo Guardians of Konterah"></img></a></li></div>
+                    <div class="gameImage"><li class="games__item"><a href="defendXKill.html"><img src="./Art/Games/DXK_Index.jpg" alt="Jogo Defend x Kill"></a></li></div>
+                    <div class="gameImage"><li class="games__item"><a href="lightBringer.html"><img src="./Art/Games/LightBringer_Index.jpg" alt="Jogo LightBringer"></a></li></div>
+                </ul>
+            </section>
+        </div>
+
+        <footer class="mFooter">
+            <h3 class="copyright">COPYRIGHT &#9400; 2020 GABRIEL SPECIE - ALL RIGHTS<del>(AND LEFTS!)</del> RESERVED</h3>
         </footer>
-    </div>
-</body>
+    </body>
 </html>
